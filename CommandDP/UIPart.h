@@ -5,7 +5,7 @@
 class UIPart
 {
 	PictureManager *pm;
-	Command *commands[2];
+	Command *commands[3];
 	string user;
 
 public:

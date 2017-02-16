@@ -6,12 +6,13 @@ UIPart::UIPart(void)
 	pm = new PictureManager();
 	commands[0] = new ViewPicture();
 	commands[1] = new ViewVerifyPicture();
+	commands[2] = new DisposePicture();
 	user = "";
 }
 
 UIPart::~UIPart(void)
 {
-	DisposePicture *dp = new DisposePicture();
+	Command *dp = new DisposePicture();
 	pm->DoItAllPicture(dp);
 	
 	delete dp;
